@@ -41,6 +41,10 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+        /*ANIMAÇÃO*/
+    transition: width 0.3s, height 0.3s; /*animação de uma tela para outra*/
+    transition-timing-function: ease; /*suavizar durante a animação*/
+
 }
 
 section#login > div#imagem{
