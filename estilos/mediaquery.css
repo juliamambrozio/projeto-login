@@ -16,17 +16,18 @@ Grandes telas: acima de 1200px
     }
     section#login{
         width: 80vw;
+        height: 280px;
         
     }
 
     section#login > div#imagem{
-        float: left; /*para alinha a imagem*/
+        float: left; /*Para alinhar a imagem*/
         width: 30%;
         height:100%;
     }
 
     section#login > div#formulario{
-        float: right; /*para alinhar o formulário*/
+        float: right; /*Para alinhar o formulário*/
         width: 70%;
     }
 }
@@ -39,16 +40,17 @@ Grandes telas: acima de 1200px
 
     section#login{
         width: 950px;
+        height: 350px;
     }
 
     section#login > div#imagem{
-        float: right;
+        float: right; /*Para alinhar a imagem*/
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario{
-        float: left;
+        float: left; /*Para alinhar o formulário*/
         width: 50%;
 
     }
@@ -58,7 +60,8 @@ Grandes telas: acima de 1200px
     }
 
     div#formulario > p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 
 }

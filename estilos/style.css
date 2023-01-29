@@ -6,6 +6,7 @@ Verde: #49a09d
 Lilás: #5f2c82
 */
 
+/*Configurações gerais*/
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
@@ -36,17 +37,20 @@ section#login{
     overflow: hidden; /*Tudo que estiver fora da borda vai ficar escondido*/
 
     background-color: white;
-    width: 260px;
-    height: 500px;
+    width: 250px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
-        /*ANIMAÇÃO*/
-    transition: width 0.3s, height 0.3s; /*animação de uma tela para outra*/
-    transition-timing-function: ease; /*suavizar durante a animação*/
+    /*ANIMAÇÃO*/
+    transition: width 0.3s, height 0.3s; 
+    /*animação de uma tela para outra*/
+    transition-timing-function: ease; 
+    /*suavizar durante a animação*/
 
 }
 
+/*Imagem*/
 section#login > div#imagem{
     display: block;
     background: #5f2c82 url('../imagens/metal.jpg') no-repeat;
@@ -55,6 +59,8 @@ section#login > div#imagem{
     height: 200px;
     
 }
+
+/*Formulário*/
 
 section#login > div#formulario{
     display: block;
@@ -69,3 +75,101 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.8em;
 }
+
+form > div.campo{
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 8px;
+    margin: 5px 0px;
+    
+
+}
+
+div.campo > label{
+    display: none;
+
+}
+
+div.campo > i{
+    color: white;
+ 
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+
+/*Caixa do usuário e da senha*/
+
+div.campo > input{
+    background-color: #532770;
+    color: white;
+    font-size: 1em;
+    width: calc(100% - 45px); /*Para calcular 100% menos 45 pixels, servindo para encaixar perfeitamente*/
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+
+    transform: translatey(-12px); /*Translate só para cima*/
+}
+
+
+div.campo > input:focus-within{ /*Quando clicar em cima os campos ficam brancos*/
+    background-color: white;
+    border: none;
+}
+
+/*Para formatar os botões*/
+
+form > input[type=submit]{ 
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+form > input[type=submit]:hover{
+    background-color: #3c8684;
+    
+}
+
+/*--------------------------------*/
+
+/*Formatando o link*/
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    color: #3c8684;
+    border: 1px solid #3c8684;
+    border-radius: 7px;
+    text-decoration: none;
+    
+}
+
+form > a.botao:hover{
+    background-color: #60d1cd;
+}
+
+form > a.botao > i{
+    font-size: 1em;
+}
+
+/*--------------------------------*/
